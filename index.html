@@ -20,15 +20,24 @@
       padding: 1rem 0;
     }
 
+    .button-container {
+      margin-top: 20px;
+    }
+
     .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px 15px;
       padding: 10px 20px;
       background-color: #0078D4;
       color: white;
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #005fa3;
     }
 
     iframe {
@@ -53,15 +62,20 @@
     <h1>Titanic Survival Dashboard</h1>
   </header>
 
+  <div class="button-container">
+    <a href="TitanicDashboard.pdf" class="btn" target="_blank">
+      📄 View PDF Version
+    </a>
+    <a href="https://github.com/Ameya674/titanic_survival_dashboard/tree/main" class="btn" target="_blank">
+      💻 View on GitHub
+    </a>
+  </div>
+
   <iframe 
     title="TitanicDashboard"
     src="https://app.powerbi.com/reportEmbed?reportId=0b28fe2c-111e-4156-82bd-c39e38306cbf&autoAuth=true&ctid=b4c6b754-54e3-41e4-a8da-304355c62816"
     allowfullscreen="true">
   </iframe>
-
-  <a href="TitanicDashboard.pdf" class="btn" target="_blank">
-    📄 View PDF Version
-  </a>
 
   <footer>
     <p>Made with ❤️ using Power BI</p>
